@@ -108,7 +108,7 @@ iter->prev = insert->prev;
 iter->next = insert;
 if (insert->prev != NULL)
 insert->prev->next = iter;
-else	
+else
 *deck = iter;
 insert->prev = iter;
 insert = iter->prev;
